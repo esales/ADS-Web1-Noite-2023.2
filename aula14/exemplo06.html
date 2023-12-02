@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header{
+            grid-area: h;
+            background-color: lightgoldenrodyellow;
+        }
+
+        nav{
+            grid-area: n;
+            background-color: lightgreen;
+        }
+
+        main{
+            grid-area: m;
+            background-color: lightpink;
+        }
+
+        aside{
+            grid-area: a;
+            background-color: lightseagreen;
+        }
+
+        footer{
+            grid-area: f;
+            background-color: lightskyblue;
+        }
+
+        .container{
+            display: grid;
+
+            grid-template-areas: 
+            "h h h h h h"
+            "n m m m a a"
+            "n f f f f f";
+
+            /* grid-template-columns: 1fr 2fr 3fr 4fr 5fr 6fr;
+            grid-template-rows: 1fr 2fr 3fr; */
+
+            margin: 0;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body class="container">
+    <header>Header</header>
+    <nav>Nav</nav>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>
