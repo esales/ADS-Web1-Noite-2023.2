@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <img id="imagem" >
+    <img id="imagem2">
+    <button id="botao">Imagem</button>
+
+    <script>
+        let botao = document.querySelector("#botao");
+        let imagem = document.querySelector("#imagem");
+        let imagem2 =  document.querySelector("#imagem2");
+
+        botao.addEventListener("click", function(){
+            let atributo = document.createAttribute("src");
+            atributo.value = "https://www.novaconcursos.com.br/portal/wp-content/uploads/2016/02/Logo-IFPE-1024x655.jpg";
+
+            imagem.setAttributeNode(atributo);
+
+            imagem2.src = "https://www.google.com/google.jpg";
+        })
+    </script>
+</body>
+</html>

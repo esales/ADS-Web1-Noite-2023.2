@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div onclick="funcao()">
+        <input type="text" id="elemento1">
+        <input type="text" id="elemento2">
+    </div>
+    
+    <script>
+        function funcao(){
+            let id = document.activeElement.id;
+            alert("O id do elemento ativo é " + id);
+        }
+    </script>
+</body>
+</html>
