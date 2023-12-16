@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="texto">
+
+    <input type="button" id="botao1" value="Clique!">
+
+    <input type="button" id="botao2">
+
+    <script>
+
+        let botao1 = document.getElementById('botao1');
+        let botao2 = document.getElementById('botao2');
+        let texto = document.getElementById('texto');
+
+        botao1.addEventListener('click', function(){
+            let atributo = document.createAttribute('mensagem');
+            atributo.value = texto.value;
+            botao2.setAttributeNode(atributo);
+
+            botao2.value = texto.value;
+            
+        });
+
+        botao2.addEventListener('click', function(){
+
+            alert(botao2.getAttribute('mensagem'));
+
+        });
+
+    </script>
+</body>
+</html>

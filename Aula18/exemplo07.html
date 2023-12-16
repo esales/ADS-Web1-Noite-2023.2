@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="campo" onmouseover="funcao()">
+
+    <input type="button" id="botao" value="ok" onclick="funcao2()">
+
+    <div id="quadrado"></div>
+    
+
+    <script>
+        function funcao(){
+            let botao = document.getElementById("botao");
+            botao.click();
+        }
+
+        function funcao2(){
+            alert("clicou!");
+
+            let elementoDiv = document.getElementById("quadrado");
+
+            elementoDiv.style.backgroundColor = "yellow";
+            elementoDiv.style.width = "300px";
+        }
+    </script>
+</body>
+</html>
